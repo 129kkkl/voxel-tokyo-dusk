@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-single/
+artifacts/
+output/
+evidence/
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+*.7z
+.DS_Store
+Thumbs.db
+__pycache__/

@@ -1,0 +1,28 @@
+name: 问题反馈
+description: 报告普通缺陷或项目导航错误；敏感问题请先阅读 SECURITY.md。
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: "请优先在受影响项目的仓库报告。不要附带密钥、Cookie、私人会话或个人资料；安全漏洞请使用该仓库已开启的私密漏洞报告入口。"
+  - type: input
+    id: project
+    attributes:
+      label: 项目与版本
+      placeholder: 仓库名称、版本或提交号
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤与运行环境
+      description: 提供最短复现步骤、系统和浏览器或运行时版本。
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 预期与实际结果
+      description: 可附经过脱敏的错误信息。
+    validations:
+      required: true
